@@ -129,4 +129,4 @@ File
     
 Attribution
 
-This analysis was completed as a capstone project for AuratTech, with team members Samana Batool and Paras Ikram. The dataset id from kaggle; the data cleaning, SQL queries, interpretation, and recommendations above are our own.
+This analysis was completed as a capstone project for AuratTech, with team members Samana Batool and Paras Ikram. The dataset is from kaggle; the data cleaning, SQL queries, interpretation, and recommendations above are our own.
