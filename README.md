@@ -120,12 +120,13 @@ File
 - [sql/MP2_Q4_Payment_and_Discount_Behavior.sql](sql/MP2_Q4_Payment_and_Discount_Behavior.sql) — Q4: payment method and discount usage by customer type
 - [sql/MP2_Q5_Order_Outcomes_Subsequent_Purchases.sql](sql/MP2_Q5_Order_Outcomes_Subsequent_Purchases.sql) — Q5: cancelled/refunded customers and 30/60/90-day repurchase rates
 - [sql/MP3_Q6_Customer_Segmentation.sql](sql/MP3_Q6_Customer_Segmentation.sql) — Q6: frequency/spending quartile segmentation
-- Pakistan Largest E-Commerce Dataset — source dataset (~585,000 order line items)
 - [customer_segmentation_share_vs_spending.png](images/customer_segmentation_share_vs_spending.png)
 - [customer_type_breakdown.png](images/customer_type_breakdown.png)
 - [customer_value_one_time_vs_repeat.png](images/customer_value_one_time_vs_repeat.png)
 - [discount_usage_by_customer_type.png](images/discount_usage_by_customer_type.png)
 - [payment_method_usage_by_customer_type.png](images/payment_method_usage_by_customer_type.png)
+- - [Pakistan Largest E-Commerce Dataset](https://www.kaggle.com/datasets/zusmani/pakistans-largest-ecommerce-dataset/code) — source dataset (~585,000 order line items)
+    
 Attribution
 
 This analysis was completed as a capstone project for AuratTech, with team members Samana Batool and Paras Ikram. The dataset id from kaggle; the data cleaning, SQL queries, interpretation, and recommendations above are our own.
