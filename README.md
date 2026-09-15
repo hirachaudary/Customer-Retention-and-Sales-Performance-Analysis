@@ -113,14 +113,14 @@ Recommendations
 
 File
 
-* `ANALYSIS_REPORT.md` — full data-cleaning log, SQL queries, results, and findings for each question above
-* `sql/Data_Cleaning.sql` — table creation, profiling, and all cleaning steps (test-record removal, placeholder standardization, `#REF!`/`\N` fixes, reconciliation checks)
-* `sql/MP1_One_Time_vs_Repeat_Customers.sql` — Q1 & Q2: one-time vs. repeat classification, order frequency, spend, AOV
-* `sql/MP2_Q3_Product_Category_Analysis.sql` — Q3: category and SKU-level sales/demand analysis
-* `sql/MP2_Q4_Payment_and_Discount_Behavior.sql` — Q4: payment method and discount usage by customer type
-* `sql/MP2_Q5_Order_Outcomes_Subsequent_Purchases.sql` — Q5: cancelled/refunded customers and 30/60/90-day repurchase rates
-* `sql/MP3_Q6_Customer_Segmentation.sql` — Q6: frequency/spending quartile segmentation
-* Pakistan Largest E-Commerce Dataset — source dataset (~585,000 order line items)
+- [ANALYSIS_REPORT.md](ANALYSIS_REPORT.md) — full data-cleaning log, SQL queries, results, and findings for each question above
+- [sql/Data_Cleaning.sql](sql/Data_Cleaning.sql) — table creation, profiling, and all cleaning steps (test-record removal, placeholder standardization, `#REF!`/`\N` fixes, reconciliation checks)
+- [sql/MP1_One_Time_vs_Repeat_Customers.sql](sql/MP1_One_Time_vs_Repeat_Customers.sql) — Q1 & Q2: one-time vs. repeat classification, order frequency, spend, AOV
+- [sql/MP2_Q3_Product_Category_Analysis.sql](sql/MP2_Q3_Product_Category_Analysis.sql) — Q3: category and SKU-level sales/demand analysis
+- [sql/MP2_Q4_Payment_and_Discount_Behavior.sql](sql/MP2_Q4_Payment_and_Discount_Behavior.sql) — Q4: payment method and discount usage by customer type
+- [sql/MP2_Q5_Order_Outcomes_Subsequent_Purchases.sql](sql/MP2_Q5_Order_Outcomes_Subsequent_Purchases.sql) — Q5: cancelled/refunded customers and 30/60/90-day repurchase rates
+- [sql/MP3_Q6_Customer_Segmentation.sql](sql/MP3_Q6_Customer_Segmentation.sql) — Q6: frequency/spending quartile segmentation
+- Pakistan Largest E-Commerce Dataset — source dataset (~585,000 order line items)
 
 Attribution
 
