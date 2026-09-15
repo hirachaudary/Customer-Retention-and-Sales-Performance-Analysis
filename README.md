@@ -121,7 +121,15 @@ File
 - [sql/MP2_Q5_Order_Outcomes_Subsequent_Purchases.sql](sql/MP2_Q5_Order_Outcomes_Subsequent_Purchases.sql) — Q5: cancelled/refunded customers and 30/60/90-day repurchase rates
 - [sql/MP3_Q6_Customer_Segmentation.sql](sql/MP3_Q6_Customer_Segmentation.sql) — Q6: frequency/spending quartile segmentation
 - Pakistan Largest E-Commerce Dataset — source dataset (~585,000 order line items)
+![Customer Segmentation Share vs Spending](images/customer_segmentation_share_vs_spending.png)
 
+![Customer Type Breakdown](images/customer_type_breakdown.png)
+
+![Customer Value One-Time vs Repeat](images/customer_value_one_time_vs_repeat.png)
+
+![Discount Usage by Customer Type](images/discount_usage_by_customer_type.png)
+
+![Payment Method Usage by Customer Type](images/payment_method_usage_by_customer_type.png)
 Attribution
 
 This analysis was completed as a capstone project for AuratTech, with team members Samana Batool and Paras Ikram. The dataset id from kaggle; the data cleaning, SQL queries, interpretation, and recommendations above are our own.
