@@ -40,6 +40,48 @@ Before analysis, the raw dataset (584,524 records) was profiled and cleaned into
 
 Full step-by-step detail is in `ANALYSIS_REPORT.md`.
 
+Calculated Columns
+
+Beyond the raw fields, the following derived columns were built during analysis and reused across multiple questions:
+
+Order-level
+
+Column	Derivation
+order_total	MAX(grand_total) per increment_id — collapses the repeated line-item value to one true order total
+order_demand	COUNT(DISTINCT increment_id) — number of unique orders
+sales_per_order	Total sales ÷ order demand
+
+Customer-level
+
+Column	Derivation
+total_orders	COUNT(DISTINCT increment_id) per customer
+total_spend / total_spending	SUM(order_total) per customer
+average_order_value (AOV)	AVG(order_total) or total_spend ÷ total_orders per customer
+customer_type	CASE WHEN total_orders = 1 THEN 'One-Time' ELSE 'Repeat' END
+frequency_quartile / spending_quartile	NTILE(4) over total_orders / total_spending
+customer_segment	Combination of frequency and spending quartiles → High-Value Loyal, High-Spending Occasional, Frequent Lower-Value, or Other
+
+Product / category-level
+
+Column	Derivation
+total_sales / product_sales	SUM((price * qty_ordered) - discount_amount), calculated at the line-item level (not grand_total, which is order-level)
+product_rank	RANK() OVER (PARTITION BY category ORDER BY product_sales DESC) — top SKUs within each category
+
+Payment & discount
+
+Column	Derivation
+percentage (payment method share)	Orders for a payment method ÷ total orders for that customer type, by customer_type
+total_discount	SUM(COALESCE(discount_amount, 0)) per order
+discount_usage_percentage	Orders with total_discount > 0 ÷ total orders
+avg_discount_when_used	AVG(total_discount) filtered to orders where a discount was applied
+
+Order outcomes
+
+Column	Derivation
+customer_group	Affected (had a cancelled/refunded order) vs. Unaffected, based on order status
+index_date	Earliest qualifying order date used as the reference point per customer
+subsequent_purchase_rate	Customers with a completed/received/paid order within 30/60/90 days of index_date ÷ total customers in the group
+
 Tools Used
 
 * PostgreSQL
